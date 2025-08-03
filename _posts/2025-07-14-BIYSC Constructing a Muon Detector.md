@@ -45,6 +45,8 @@ Muon detected:
    - SiPM
 
    * Plastic Scintillators
+   
+    ![plastic Scintillators](plastic.png)
 
    * Cables
 
@@ -53,6 +55,8 @@ Muon detected:
    * Reflective foils
 
    * A laser cutter
+
+     ![laser cutter](laser cutter.jpg)
 
    * A box(For holding the components of the detector and blocking light)
 
@@ -68,9 +72,13 @@ Muon detected:
 
    * A drill
 
+     ![drill](drill.png)
+
    * Multimeters
 
-   * Amplifiers
+   * Amplifiers 
+
+     ![amplifier](amplifier.jpg)
 
    * A computer\.
 
@@ -92,6 +100,4 @@ Muon detected:
 
    And now our detectors are ready to work!!
    
-   ![amplifier](amplifier.jpg)
-
    ![inside](inside the box.jpg)
