@@ -12,9 +12,9 @@ image:
 
 # Visiting TIANFU Cosmic Ray Research Center
 
-Today is one of the most meaningful and important day in my journey. On our way back to Chongqing, we returned to Chengdu and visited the TIANFU Cosmic Ray Research Center, which is affiliated to High Energy Department of Chengdu Branch, Chinese Academy of Sciences. Although I only stayed there for one hour, I had learned a whole lot about all kinds of detectors.
+Today is one of the most meaningful and important day in my journey. On our way back to Chongqing, we returned to Chengdu and visited the TIANFU Cosmic Ray Research Center, which is affiliated to High Energy Department of Chengdu Branch, Chinese Academy of Sciences. 
 
-  When we stepped into the front door of the building, all kinds of apparatus equipping LHAASO came into view: The PM, SiPM, WFCTA, LACT, and so on. A few minutes later, Zhang, the expert we were conducting with walked out from the corridor and greeted us. Then he showed us around the exhibitions in the main hall of the department and introduced the apparatus to us. After a while, another expert, who is a Doctor,  showed up. Zhang told us he is working on the LACT project and have expertise in cosmic ray detectors. 
+When we stepped into the front door of the building, all kinds of apparatus equipping LHAASO came into view: The PM, SiPM, WFCTA, LACT, and so on. A few minutes later, Zhang, the expert we were conducting with walked out from the corridor and greeted us. Then he showed us around the exhibitions in the main hall of the department and introduced the apparatus to us. After a while, another expert, who is a Doctor,  showed up. Zhang told us he is working on the LACT project and have expertise in cosmic ray detectors. 
 
 ![communicating](communicating.jpg)
 
