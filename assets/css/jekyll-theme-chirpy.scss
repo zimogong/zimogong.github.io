@@ -1,0 +1,183 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+.bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+
+/* make site title's color blacker */
+html[data-mode='light'] .site-title {
+  color: #000 !important;
+}
+
+html[data-mode='dark'] .site-title {
+  color: #fff !important;
+}
+
+/* make text's color blacker */
+html[data-mode='light'] {
+  --text-color: #111;
+}
+
+html[data-mode='dark'] {
+  --text-color: #e0e0e0; /* 可读性更强的浅灰色 */
+}
+
+/* make title's color blacker */
+html[data-mode='light'] main h1,
+html[data-mode='light'] .dynamic-title {
+  color: #000 !important;
+}
+
+html[data-mode='dark'] main h1,
+html[data-mode='dark'] .dynamic-title {
+  color: #ffffff !important; /* 白色，避免在暗背景上看不见 */
+}
+
+/*文章卡片的设置*/
+
+/* 默认文章卡片标题为蓝色 */
+html[data-mode='light'] {
+  --heading-color: #007acc;
+}
+
+html[data-mode='dark'] {
+  --heading-color: #66bfff;
+}
+/* 悬停时标题变黑或白 */
+html[data-mode='light'] .post-preview:hover {
+  --heading-color: #000000 !important;
+}
+
+html[data-mode='dark'] .post-preview:hover {
+  --heading-color: #ffffff !important;
+}
+
+.card-title {
+  font-weight: 700 !important;
+  // font-size: 1.3rem !important;
+}
+
+/* 浅色模式下文章卡片 hover 效果：悬停时背景变蓝，文字变白 */
+
+/* —— Light 模式：仅在 hover 时才应用蓝底白字 —— */
+html[data-mode='light'] {
+  .post-preview {
+    position: relative; /* 关键，建立定位上下文 */
+  }
+
+  .post-preview::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #007fff !important;
+    opacity: 0 !important;
+    transition: opacity .35s ease-in-out;
+    z-index: 0;
+  }
+
+  .post-preview:hover::before {
+    opacity: 0.8 !important; /* 半透明蓝色遮罩，opacity设小点，避免盖死文字 */
+  }
+
+  .post-preview:hover,
+  .post-preview:hover *,
+  .post-preview:hover .post-meta,
+  .post-preview:hover .card-title,
+  .post-preview:hover .post-title,      /* 新增标题类 */
+  .post-preview:hover .card-text,
+  .post-preview:hover .post-tags .post-tag {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+html[data-mode='dark'] {
+  .post-preview {
+    position: relative;
+  }
+
+  .post-preview::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #007fff;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    z-index: 0;
+  }
+
+  .post-preview:hover::before {
+    opacity: 0.8 !important;
+  }
+
+  .post-preview:hover {
+    position: relative;
+    z-index: 1;
+
+    /* ✅ 修改标题的变量值 */
+    --heading-color: #000000 !important;
+  }
+
+  .post-preview:hover,
+  .post-preview:hover *,
+  .post-preview:hover .post-meta,
+  .post-preview:hover .card-text,
+  .post-preview:hover .post-tags .post-tag {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* 所有导航项默认无背景，文字和图标为默认颜色 */
+#sidebar .nav .nav-item .nav-link {
+background-color: transparent !important;
+color: var(--sidebar-muted-color) !important; /* 默认文字色变量 */
+border-radius: 0.5rem;
+transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+display: flex;
+align-items: center;
+}
+
+/* 默认图标颜色，继承文字颜色 */
+#sidebar .nav .nav-item .nav-link svg,
+#sidebar .nav .nav-item .nav-link i {
+color: inherit !important;
+fill: inherit !important;
+}
+
+/* 当前项默认样式（加粗 + 放大 + 蓝色） */
+#sidebar .nav .nav-item.active .nav-link {
+font-weight: 700;
+font-size: 1.1em;
+color: #005fa3 !important;
+}
+
+/* 鼠标悬停变色和右移效果 */
+#sidebar .nav .nav-item .nav-link:hover {
+background-color: #007acc !important; /* 蓝底 */
+color: #ffffff !important;             /* 白字 */
+transform: translateX(12px);
+}
+
+/* 悬停图标变白 */
+#sidebar .nav .nav-item .nav-link:hover svg,
+#sidebar .nav .nav-item .nav-link:hover i {
+color: #ffffff !important;
+fill: #ffffff !important;
+}
+
+
