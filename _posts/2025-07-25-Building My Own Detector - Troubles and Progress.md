@@ -3,7 +3,7 @@ layout: post
 title: "Building My Own Detector: Troubles and Progress"
 date: 2025-07-25 21:43:00 +0800
 math: true
-categories: [Cosmic Ray, Detector Physics]
+categories: [Cosmic Ray Detector, Physics]
 tags: [Detector, Cosmic Rays]
 media_subpath: /assets/img/20250725/
 image:
