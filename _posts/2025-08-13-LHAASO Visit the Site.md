@@ -7,7 +7,7 @@ categories: [Cosmic Ray, LHAASO, Physics]
 tags: [LHAASO, Cosmic Rays]
 media_subpath: /assets/img/20250813
 image:
-  path: title.png
+  path: title.jpg
 ---
 
 # Inside LHAASO

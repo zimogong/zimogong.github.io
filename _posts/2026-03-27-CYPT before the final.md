@@ -3,8 +3,8 @@ layout: post
 title: The Last Day Before the Final Competition
 date: 2026-03-27 20:02:00 +0800
 math: true
-categories: [CYPT, Physics]
-tags: [CYPT, Physics] 
+categories: [IYPT, CYPT, Physics]
+tags: [IYPT, CYPT, Physics] 
 media_subpath: /assets/img/20260327
 image:
   path: title.jpg
